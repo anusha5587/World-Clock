@@ -11,12 +11,9 @@ body {
   height: 475px;
   padding: 15px 20px 40px 20px;
   border-radius: 6px;
-  background: linear-gradient(
-    180.3deg,
-    rgb(221, 221, 221) 5.5%,
-    rgb(110, 136, 161) 90.2%
-  );
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
+
 h1 {
   text-align: center;
 }
@@ -29,10 +26,6 @@ footer {
   font-weight: light;
   width: 600px;
   margin: 0 auto;
-  background: linear-gradient(
-    180.3deg,
-    rgb(221, 221, 221) 5.5%,
-    rgb(110, 136, 161) 90.2%
-  );
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
   border-radius: 6px;
 }
