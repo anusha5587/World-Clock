@@ -45,3 +45,10 @@ setInterval(updateCityTime, 1000);
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCitySelected);
+
+let homeLink = document.querySelector(
+  'a[href="https://world-clock-mycreation.netlify.app"]'
+);
+homeLink.addEventListener("click", () => {
+  window.location.href = "https://world-clock-mycreation.netlify.app";
+});
