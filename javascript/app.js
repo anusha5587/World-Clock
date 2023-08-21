@@ -1,8 +1,21 @@
-function showSelectedCity(event) {
-  if (event.target.value.length > 0) {
-    let currentCityTime = moment().format("dddd, MMMM D, YYYY h:mm A");
-    alert(`It is ${currentCityTime} in ${event.target.value}`);
-  }
+function updateCityTime() {
+  let londonElement = document.querySelector("#london");
+  let londonDateElement = londonElement.querySelector(".date");
+  let londonTimeElement = londonElement.querySelector(".time");
+  let londonTime = moment().tz("Europe/London");
+  londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+  londonTimeElement.innerHTML = londonTime.format(
+    "h:mm:ss [<small>]A[<small/>]"
+  );
+
+  let bangaloreElement = document.querySelector("#bangalore");
+  let bangaloreDateElement = bangaloreElement.querySelector(".date");
+  let bangaloreTimeElement = bangaloreElement.querySelector(".time");
+  let bangaloreTime = moment().tz("Asia/Calcutta");
+  bangaloreDateElement.innerHTML = bangaloreTime.format("MMMM Do YYYY");
+  bangaloreTimeElement.innerHTML = bangaloreTime.format(
+    "h:mm:ss [<small>]A[<small/>]"
+  );
 }
-let citySelect = document.querySelector("#city");
-citySelect.addEventListener("change", showSelectedCity);
+updateCityTime();
+setInterval(updateCityTime, 1000);
