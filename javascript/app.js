@@ -38,6 +38,12 @@ function updateCitySelected(event) {
     "A"
   )}</small></div>
   </div>`;
+  let homeLink = document.querySelector("#home-page");
+  if (cityName) {
+    homeLink.style.display = "inline-block";
+  } else {
+    homeLink.style.display = "none";
+  }
 }
 
 updateCityTime();
@@ -46,9 +52,7 @@ setInterval(updateCityTime, 1000);
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCitySelected);
 
-let homeLink = document.querySelector(
-  'a[href="https://world-clock-mycreation.netlify.app"]'
-);
+let homeLink = document.querySelector("#home-page");
 homeLink.addEventListener("click", () => {
   window.location.href = "https://world-clock-mycreation.netlify.app";
 });
