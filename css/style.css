@@ -65,11 +65,15 @@ h2 {
 footer {
   text-align: center;
   margin-left: 25px;
-  font-family: "Pacifico", cursive;
+  font-family: "Lobster", cursive;
   font-size: 15px;
   font-weight: light;
   width: 600px;
   margin: 0 auto;
   background: linear-gradient(to top, #dfe9f3 0%, white 100%);
   border-radius: 6px;
+}
+
+footer a {
+  text-decoration: none;
 }
