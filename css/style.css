@@ -62,6 +62,11 @@ h2 {
   line-height: 30px;
 }
 
+#home-page {
+  font-family: "Lobster", cursive;
+  font-size: 15px;
+}
+
 footer {
   text-align: center;
   margin-left: 25px;
